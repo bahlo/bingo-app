@@ -495,6 +495,7 @@
 				145035A21BAC01E200807D9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		145035A31BAC01E200807D9B /* Build configuration list for PBXNativeTarget "BingoTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +504,7 @@
 				145035A51BAC01E200807D9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		145035A61BAC01E200807D9B /* Build configuration list for PBXNativeTarget "BingoUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +513,7 @@
 				145035A81BAC01E200807D9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

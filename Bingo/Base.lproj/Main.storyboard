@@ -18,7 +18,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8f7-76-Var">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="128"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -37,9 +37,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Bingo" id="iQZ-p7-y9N">
                         <barButtonItem key="leftBarButtonItem" title="History" id="yEF-PK-BsV">
-                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="idI-UB-SnL" kind="presentation" id="hG5-DN-FBB"/>
+                                <segue destination="idI-UB-SnL" kind="presentation" id="bLC-iJ-xUs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -93,10 +93,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="History" id="IVB-b1-tol">
                         <barButtonItem key="leftBarButtonItem" title="Reset" id="bBE-KJ-aKK">
-                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="resetButtonPressed:" destination="fYX-NQ-Tlf" id="ucQ-64-CLa"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="Llk-cc-Qd1">
-                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="fYX-NQ-Tlf" id="LCj-W2-NHH"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>

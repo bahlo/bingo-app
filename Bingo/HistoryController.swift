@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 class HistoryController: UITableViewController {
+    
     var items: [Number]?
     
     required init?(coder aDecoder: NSCoder) {
@@ -50,7 +51,8 @@ class HistoryController: UITableViewController {
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         
         do {
-           try managedObjectContext.executeRequest(deleteRequest)
+            try managedObjectContext.executeRequest(deleteRequest)
+            items = []
         } catch let error as NSError {
             let alert = UIAlertController(title: "Error", message: "\(error)",
                 preferredStyle: UIAlertControllerStyle.Alert)
@@ -96,5 +98,15 @@ class HistoryController: UITableViewController {
         self.tableView.allowsMultipleSelectionDuringEditing = false
     }
     
+    // MARK: IB stuff
     
+    @IBAction func resetButtonPressed(sender: UIBarButtonItem) {
+        resetItems()
+        tableView.reloadData()
+    }
+    
+    
+    @IBAction func doneButtonPressed(sender: UIBarButtonItem) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
