@@ -95,4 +95,6 @@ class HistoryController: UITableViewController {
     override func viewDidLoad() {
         self.tableView.allowsMultipleSelectionDuringEditing = false
     }
+    
+    
 }
