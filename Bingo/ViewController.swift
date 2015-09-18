@@ -19,7 +19,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func generateNumber(min: Int, max: Int) -> Int {
+        return min + Int(arc4random_uniform(UInt32(max - min)))
+    }
+    
+    
+    @IBAction func numberButtonPressed(sender: UIButton) {
+        sender.setTitle("\(self.generateNumber(1, max: 128))",
+            forState: .Normal)
+    }
 }
 
