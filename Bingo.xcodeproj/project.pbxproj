@@ -16,6 +16,7 @@
 		145035911BAC01E200807D9B /* BingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145035901BAC01E200807D9B /* BingoTests.swift */; };
 		1450359C1BAC01E200807D9B /* BingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1450359B1BAC01E200807D9B /* BingoUITests.swift */; };
 		145035AA1BAC05FF00807D9B /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145035A91BAC05FF00807D9B /* Number.swift */; settings = {ASSET_TAGS = (); }; };
+		145035AC1BAC100700807D9B /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145035AB1BAC100700807D9B /* HistoryController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1450359B1BAC01E200807D9B /* BingoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoUITests.swift; sourceTree = "<group>"; };
 		1450359D1BAC01E200807D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		145035A91BAC05FF00807D9B /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		145035AB1BAC100700807D9B /* HistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				145035781BAC01E200807D9B /* AppDelegate.swift */,
 				1450357A1BAC01E200807D9B /* ViewController.swift */,
 				145035A91BAC05FF00807D9B /* Number.swift */,
+				145035AB1BAC100700807D9B /* HistoryController.swift */,
 				1450357C1BAC01E200807D9B /* Main.storyboard */,
 				145035821BAC01E200807D9B /* Assets.xcassets */,
 				145035841BAC01E200807D9B /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145035AC1BAC100700807D9B /* HistoryController.swift in Sources */,
 				145035AA1BAC05FF00807D9B /* Number.swift in Sources */,
 				1450357B1BAC01E200807D9B /* ViewController.swift in Sources */,
 				145035811BAC01E200807D9B /* Bingo.xcdatamodeld in Sources */,
