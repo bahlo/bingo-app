@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
@@ -24,10 +25,24 @@ class ViewController: UIViewController {
         return min + Int(arc4random_uniform(UInt32(max - min)))
     }
     
+    func saveNumber(num: Int) {
+        let delegate = UIApplication.sharedApplication().delegate
+            as! AppDelegate
+        let managedObjectContext = delegate.managedObjectContext
+        
+        let number = NSEntityDescription
+            .insertNewObjectForEntityForName("Number",
+                inManagedObjectContext: managedObjectContext) as! Number
+        number.value = Int32(num)
+        number.generatedAt = NSDate()
+        delegate.saveContext()
+    }
     
     @IBAction func numberButtonPressed(sender: UIButton) {
-        sender.setTitle("\(self.generateNumber(1, max: 128))",
-            forState: .Normal)
+        let num = self.generateNumber(1, max: 128)
+        
+        self.saveNumber(num)
+        sender.setTitle("\(num)", forState: .Normal)
     }
 }
 
