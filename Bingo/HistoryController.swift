@@ -12,13 +12,14 @@ import CoreData
 class HistoryController: UITableViewController {
     
     var items: [Number]?
-    
-    required init?(coder aDecoder: NSCoder) {
+
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+
         items = fetchItems()
     }
-    
+
+
     // MARK: CoreData
     
     func fetchItems() -> [Number] {
