@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func numberButtonPressed(sender: UIButton) {
-        let num = self.generateNumber(1, max: 128)
+        let num = self.generateNumber(1, max: 75)
         
         self.saveNumber(num)
         sender.setTitle("\(num)", forState: .Normal)
