@@ -1,4 +1,4 @@
-# bing-app
+# bingo-app
 
 A small bingo app
 
