@@ -4,6 +4,5 @@ A small bingo app
 
 This isn't really much more than a random number generator with a history.
 
-## Known bugs
-
-- [ ] No check for double numbers
+**Please note:** I wrote this app in a few hours, it may contain bugs and
+ugly code.
