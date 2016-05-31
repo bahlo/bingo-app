@@ -22,7 +22,24 @@ class ViewController: UIViewController {
     }
     
     func generateNumber(min: Int, max: Int) -> Int {
-        return min + Int(arc4random_uniform(UInt32(max - min)))
+        let num = min + Int(arc4random_uniform(UInt32(max - min)))
+        
+        // Search core data if we already had that number
+        let delegate = UIApplication.sharedApplication().delegate
+            as! AppDelegate
+        let managedObjectContext = delegate.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: "Number")
+        fetchRequest.predicate = NSPredicate(format: "value == %d", num)
+        
+        var error: NSError? = nil
+        let count = managedObjectContext
+            .countForFetchRequest(fetchRequest, error: &error)
+        if count > 0 {
+            return 0;
+        }
+
+        
+        return num
     }
     
     func saveNumber(num: Int) {
@@ -39,8 +56,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func numberButtonPressed(sender: UIButton) {
-        let num = self.generateNumber(1, max: 75)
+        var num = self.generateNumber(1, max: 75)
         
+        // Try 100 times to generate another number
+        for n in 1...100 {
+            if num > 0 {
+                break
+            }
+
+            print(n)
+            num = self.generateNumber(1, max: 75)
+        }
+
         self.saveNumber(num)
         sender.setTitle("\(num)", forState: .Normal)
     }
