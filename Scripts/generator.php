@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Avenir Next', sans-serif;
       font-size: 2em;
     }
 
@@ -24,7 +24,9 @@
     }
 
     .heading td {
-      line-height: 1.4;
+      background: url('file:///Users/arne/Desktop/SKBingo/SKBingo-Logo.png') center no-repeat;
+      height: 85px;
+      background-size: cover;
     }
 
     td {
@@ -36,14 +38,18 @@
 </head>
 <body>
 <?php
-  for ($users = 0; $users < 6; $users++) {
+  for ($users = 0; $users < 8; $users++) {
     echo <<<EOL
 <table>
   <tr class="heading">
+<<<<<<< HEAD
     <td colspan="5">SUPPKULTUR</td>
   </tr>
   <tr class="heading">
     <td colspan="5">BINGO</td>
+=======
+    <td colspan="5"></td>
+>>>>>>> suppkultur
   </tr>
 EOL;
 
