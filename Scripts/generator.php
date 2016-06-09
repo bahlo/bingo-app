@@ -19,7 +19,7 @@
     }
 
     .heading {
-      background: #FF4136;
+      background: black;
       color: white;
     }
 
@@ -40,7 +40,7 @@
     echo <<<EOL
 <table>
   <tr class="heading">
-    <td colspan="5">BAHLO</td>
+    <td colspan="5">SUPPKULTUR</td>
   </tr>
   <tr class="heading">
     <td colspan="5">BINGO</td>
