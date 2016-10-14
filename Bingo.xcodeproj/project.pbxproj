@@ -15,8 +15,8 @@
 		145035861BAC01E200807D9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145035841BAC01E200807D9B /* LaunchScreen.storyboard */; };
 		145035911BAC01E200807D9B /* BingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145035901BAC01E200807D9B /* BingoTests.swift */; };
 		1450359C1BAC01E200807D9B /* BingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1450359B1BAC01E200807D9B /* BingoUITests.swift */; };
-		145035AA1BAC05FF00807D9B /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145035A91BAC05FF00807D9B /* Number.swift */; settings = {ASSET_TAGS = (); }; };
-		145035AC1BAC100700807D9B /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145035AB1BAC100700807D9B /* HistoryController.swift */; settings = {ASSET_TAGS = (); }; };
+		145035AA1BAC05FF00807D9B /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145035A91BAC05FF00807D9B /* Number.swift */; };
+		145035AC1BAC100700807D9B /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145035AB1BAC100700807D9B /* HistoryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,13 +202,16 @@
 					145035741BAC01E200807D9B = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = AK9NEP7BV6;
+						LastSwiftMigration = 0800;
 					};
 					1450358B1BAC01E200807D9B = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 145035741BAC01E200807D9B;
 					};
 					145035961BAC01E200807D9B = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 145035741BAC01E200807D9B;
 					};
 				};
@@ -418,6 +421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.arne.Bingo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -432,6 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.arne.Bingo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -443,6 +448,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.arne.BingoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bingo.app/Bingo";
 			};
 			name = Debug;
@@ -455,6 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.arne.BingoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bingo.app/Bingo";
 			};
 			name = Release;
@@ -466,6 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.arne.BingoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = Bingo;
 				USES_XCTRUNNER = YES;
 			};
@@ -478,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.arne.BingoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = Bingo;
 				USES_XCTRUNNER = YES;
 			};

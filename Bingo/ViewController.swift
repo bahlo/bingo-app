@@ -31,11 +31,14 @@ class ViewController: UIViewController {
         let fetchRequest = NSFetchRequest(entityName: "Number")
         fetchRequest.predicate = NSPredicate(format: "value == %d", num)
         
-        var error: NSError? = nil
-        let count = managedObjectContext
-            .countForFetchRequest(fetchRequest, error: &error)
-        if count > 0 {
-            return 0;
+        do {
+            let count = try managedObjectContext
+                .countForFetchRequest(fetchRequest)
+            if count > 0 {
+                return 0;
+            }
+        } catch {
+            return 0
         }
 
         
